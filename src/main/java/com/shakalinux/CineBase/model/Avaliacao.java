@@ -29,7 +29,7 @@ public class Avaliacao {
     @Max(10)
     private int nota;
 
-    @Column(columnDefinition = "TEXT")
+    @Column(columnDefinition = "TEXT", nullable = false)
     private String comentario;
 
     @ManyToOne(fetch = FetchType.LAZY)
