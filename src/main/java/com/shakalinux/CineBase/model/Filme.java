@@ -21,7 +21,7 @@ public class Filme {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idFilmes;
+    private Long id_filmes;
 
     @Column(nullable = false, length = 100)
     private String titulo;
@@ -32,7 +32,7 @@ public class Filme {
     @Column(nullable = false)
     @Min(1888)
     @Max(2100)
-    private Integer anoLancamento;
+    private Integer ano_lancamento;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "genero_id")

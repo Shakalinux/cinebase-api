@@ -19,7 +19,7 @@ public class Avaliacao {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idAvaliacao;
+    private Long id_avaliacao;
 
     @Column(nullable = false, length = 50)
     private String usuario;

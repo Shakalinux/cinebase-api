@@ -16,7 +16,7 @@ public class Genero {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idGeneros;
+    private Long id_generos;
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false, unique = true, length = 50)

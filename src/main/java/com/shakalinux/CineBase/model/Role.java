@@ -1,15 +1,19 @@
 package com.shakalinux.CineBase.model;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.sql.ast.tree.insert.Values;
 
 
 @Entity
 @Table(name = "tb_roles")
+@Getter
+@Setter
 public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idRoles;
+    private Long id_roles;
 
     @Column(nullable = false, unique = true, length = 30)
     private String name;
