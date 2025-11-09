@@ -35,9 +35,9 @@ public class AdminUserConfig implements CommandLineRunner {
             admin.setPassword(bCryptPasswordEncoder.encode("123456"));
             admin.setRoles(Collections.singleton(roleAdmin));
             userRepostitory.save(admin);
-            System.out.println("✅ Usuário admin criado com sucesso!");
+            System.out.println("Usuário admin criado com sucesso!");
         } else {
-            System.out.println("ℹ️ Usuário admin já existe, não será recriado.");
+            System.out.println("Usuário admin já existe, não será recriado.");
         }
     }
 
